@@ -1,0 +1,103 @@
+/* Base */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+/* Header */
+.topbar {
+  background: #1e90ff;
+  padding: 15px 0;
+}
+
+.menu {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  box-shadow: #d63031;
+}
+
+/* Títulos */
+h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.notice {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Warning */
+.warning {
+  background-color: #ffe1e1;
+  border-left: 5px solid #d63031;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+/* Tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.table th {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  background-color: #1e90ff;
+  color: white;
+}
+
+.badge-gray {
+  background-color: #777;
+}
+
+.muted {
+  color: #888;
+  font-size: 0.8rem;
+}

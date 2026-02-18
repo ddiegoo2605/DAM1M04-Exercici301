@@ -1,0 +1,17 @@
+{
+  "cities": [
+    { "name": "L'Hospitalet de Llobregat", "country": "ES", "population": 277264, "coastal": false },
+    { "name": "Cornella", "country": "ES", "population": 90303, "coastal": false },
+    { "name": "Barcelona", "country": "ES", "population": 1620000, "coastal": true },
+    { "name": "Madrid", "country": "ES", "population": 3223000, "coastal": false },
+    { "name": "València", "country": "ES", "population": 792000, "coastal": true },
+    { "name": "Paris", "country": "FR", "population": 2148000, "coastal": false },
+    { "name": "Lisboa", "country": "PT", "population": 545000, "coastal": true },
+    { "name": "Loja", "country": "EC", "population": 1732066, "coastal": false },
+    { "name": "Lucerna", "country": "CH", "population": 86451, "coastal": false },
+    { "name": "Roma", "country": "IT", "population": 2873000, "coastal": false },
+    { "name": "Berlín", "country": "AL", "population": 3664000, "coastal": false },
+    { "name": "Atenes", "country": "GR", "population": 664046, "coastal": true },
+    { "name": "Brussel·les", "country": "BE", "population": 1209000, "coastal": false } 
+]
+}

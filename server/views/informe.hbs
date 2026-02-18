@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Informe - {{title}}</title>
+  <link rel="stylesheet" href="/estils.css" />
+</head>
+<body>
+  {{> header}}
+
+  <main class="container">
+    <h1>Informe de ciutats</h1>
+    <p class="subtitle">{{subtitle}}</p>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Ciutat</th>
+          <th>País</th>
+          <th>Població</th>
+          <th>Zona</th>
+          <th>Mida (llindar 800000)</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {{#each cities}}
+          <tr>
+            <td>{{name}}</td>
+
+            <td>
+              {{lookup ../countries country}}
+              <span class="muted">({{country}})</span>
+            </td>
+
+            <td>
+              {{#if population}}
+                {{population}}
+              {{else}}
+                <em>Sense dades</em>
+              {{/if}}
+            </td>
+
+            <td>
+              {{#if coastal}}
+                <span class="badge">Costanera</span>
+              {{else}}
+                <span class="badge badge-gray">Interior</span>
+              {{/if}}
+            </td>
+
+            <td>
+              {{#if (lte population 800000)}}
+                <strong>Petita</strong>
+              {{else}}
+                <strong>Gran</strong>
+              {{/if}}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
